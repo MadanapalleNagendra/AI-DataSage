@@ -8,7 +8,7 @@ from langchain_core.runnables import RunnableLambda
 
 # Initialize AI Model
 chat_model = ChatGoogleGenerativeAI(
-    google_api_key="AIzaSyAuPij3vtMkyLaH6RFVsqSg-lEugoKUPE4",
+    google_api_key = st.secrets["GOOGLE_API_KEY"],
     model="gemini-1.5-pro",
     temperature=1
 )
